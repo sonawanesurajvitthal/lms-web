@@ -1,0 +1,17 @@
+<form [formGroup]="loanForm" (ngSubmit)="submitLoan()">
+    <mat-card>
+      <mat-card-title>Apply for a Loan</mat-card-title>
+
+      <mat-form-field>
+        <input matInput formControlName="loan" placeholder="Loan">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="amount" placeholder="Loan Amount">
+      </mat-form-field>
+
+
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </mat-card>
+  </form>
+  

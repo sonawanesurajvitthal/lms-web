@@ -1,0 +1,25 @@
+
+<mat-card>
+    <mat-card-title>Loans</mat-card-title>
+    <table mat-table [dataSource]="loans">
+
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> Loan ID </th>
+            <td mat-cell *matCellDef="let loan"> {{loan.id}} </td>
+          </ng-container>
+
+      <ng-container matColumnDef="loan">
+        <th mat-header-cell *matHeaderCellDef> Loan Name </th>
+        <td mat-cell *matCellDef="let loan"> {{loan.loan}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="amount">
+        <th mat-header-cell *matHeaderCellDef> Amount </th>
+        <td mat-cell *matCellDef="let loan"> {{loan.amount}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="['id','loan', 'amount']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['id','loan','amount'];"></tr>
+    </table>
+  </mat-card>
+  

@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { LoanService } from '../service/loan.service';
+import { LoanService } from '../services/loan.service';
 
 @Component({
   selector: 'app-loan-application',
